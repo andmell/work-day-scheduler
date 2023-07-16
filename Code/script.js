@@ -1,3 +1,18 @@
+let currentHour = dayjs().hour();
+console.log(currentHour);
+timeBlock = $('.time-block');
+let currentDay = document.querySelector('#currentDay');
+
+if (currentHour > 1){
+  $('.time-block').addClass("past");
+}
+
+function setTime() {
+  currentDay.innerHTML = dayjs().format('dddd MMM-D' + ', ' + 'hh' + ':' + 'mma');
+}
+setInterval(setTime, 1000);
+
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
@@ -21,3 +36,11 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+
+
+// If loop
+// if the time is equal to present time, set state present
+// else if the time is after present time, set state past
+// else set state future 
+
+// Maybe in HTML have one time block, and then ammend additional ones to it in, with an increasing index. 
