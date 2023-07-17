@@ -1,1 +1,4 @@
 Instead of having 8 different divs for the time bar, we can have just a placeholder, and append 8 different 
+
+omg!!! use .this
+USE .THIS AGGGHGHGHGGGGGGGGGGGGGGGGGGGGGGGGGGG
