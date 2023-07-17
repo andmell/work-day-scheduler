@@ -2,9 +2,7 @@ let currentHour = dayjs().hour();
 console.log(currentHour);
 timeBlock = $('.time-block');
 let currentDay = document.querySelector('#currentDay');
-let timeBlockTime = 22
-
-
+let timeBlockTime = 20
 
 if (timeBlockTime < currentHour){
   $('.time-block').addClass("past");
@@ -18,7 +16,6 @@ function setTime() {
   currentDay.innerHTML = dayjs().format('dddd, MMMM D' + ', ' + 'hh' + ':' + 'mma');
 }
 setInterval(setTime, 1000);
-
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
