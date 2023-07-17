@@ -2,13 +2,20 @@ let currentHour = dayjs().hour();
 console.log(currentHour);
 timeBlock = $('.time-block');
 let currentDay = document.querySelector('#currentDay');
+let timeBlockTime = 22
 
-if (currentHour > 1){
+
+
+if (timeBlockTime < currentHour){
   $('.time-block').addClass("past");
-}
+} else if (timeBlockTime == currentHour) {
+  $('.time-block').addClass("present") 
+} else {
+  $('.time-block').addClass("future");
+};
 
 function setTime() {
-  currentDay.innerHTML = dayjs().format('dddd MMM-D' + ', ' + 'hh' + ':' + 'mma');
+  currentDay.innerHTML = dayjs().format('dddd, MMMM D' + ', ' + 'hh' + ':' + 'mma');
 }
 setInterval(setTime, 1000);
 
