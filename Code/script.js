@@ -19,17 +19,24 @@ function setColor(){
 timeBlock.each(function() {
   const blockNumber = parseInt(this.id);
  console.log(blockNumber);
- if (blockNumber < currentHour) {
-  timeBlock.addClass('past');
- } else if (blockNumber == currentHour) {
-  timeBlock.addClass('present');
- } else if (blockNumber > currentHour) {
-  timeBlock.addClass('future');
- };
-
+$(this).toggleClass('past', blockNumber < currentHour);
+$(this).toggleClass('present', blockNumber === currentHour);
+$(this).toggleClass('future', blockNumber > currentHour);
 });
-
 };
+
+function resetColor() {
+  timeBlock.each(function(){
+    const blockNumber = parseInt(this.id);
+    if (blockNumber < currentHour){
+      blockNumber.removeClass('present future');
+    } else if (blockNumber === currentHour){
+      blockNumber.removeClass('past future');
+    } else if (blockNumber > currentHour){
+      blockNumber.removeClass('past present');
+    };
+  })
+}
 setColor();
 
 
