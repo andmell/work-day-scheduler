@@ -1,6 +1,12 @@
 var timeGrid = document.querySelector('#timeGrid');
+var clockTime = document.querySelector('#currentDay');
 
 const hours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+
+setInterval(()=>{
+  clockTime.innerHTML = new Date().toLocaleString()
+}, 1000)
+
 
 function numberTranslate(hour) {
     switch (hour) {
@@ -62,3 +68,4 @@ for (let index = 0; index < hours.length; index++) {
 
     timeGrid.append(outerDiv);
 }
+
