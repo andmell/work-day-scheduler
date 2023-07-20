@@ -15,6 +15,8 @@ For example, if a user's time is 11:01 AM, the blocks 9 AM, and 10 AM will be gr
 
 Additionally, a user may enter text into a block-space, and click the button with the save-icon on the right-hand side of the screen. This will save the text into the user's local storage, and then print it back into the same text box that the user originally entered the text into. This will allow the user to exit and re-enter the page without losing their data. In turn, a user may find this application to aid in organization.
 
+![An image of a workday scheduler. All time blocks are grayed out. The time at the top reads 9:25 PM](./assets/Screenshot%20(67).png)
+
 ## Credits
 - [Changing elements based on time](https://stackoverflow.com/questions/40759946/change-element-based-on-time)
 - [Defining variables in jquery](https://stackoverflow.com/questions/1418613/how-to-define-variable-in-jquery)
