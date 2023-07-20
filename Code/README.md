@@ -6,7 +6,7 @@ This app was built to assist a user in organizing their 9 to 5 workday. It allow
 This application is JavaScript heavy, and relies heavily on third party libraries such as Jquery and Bootstrap. It was an interesting challenge, being able to navigate those libraries to enhance the function of the app. 
 
 ## Installation
-This is an application that has been deployed on GitHub's native webpage deployment software, and can be navigated to [here](). No installation is necessary.
+This is an application that has been deployed on GitHub's native webpage deployment software, and can be navigated to [here](https://andmell.github.io/work-day-scheduler/). No installation is necessary.
 
 ## Usage
 Once navigated to the application, you may see differing colored blocks depending on your local time. A green block indicates a time that is at least 1 hour in the future. A red block indicates an hour that is currently being passed. A gray block is a time that has already passed.
